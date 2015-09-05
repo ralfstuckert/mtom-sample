@@ -1,0 +1,23 @@
+POST /ws/documents HTTP/1.1
+Accept-Encoding: gzip
+Accept: text/xml, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+SOAPAction: ""
+Content-Type: text/xml; charset=utf-8
+Cache-Control: no-cache
+Pragma: no-cache
+User-Agent: Java/1.7.0_25
+Host: localhost:7070
+Connection: keep-alive
+Content-Length: 353
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Header />
+	<SOAP-ENV:Body>
+		<ns2:storeDocumentRequest xmlns:ns2="https://github.com/ralfstuckert/mtom">
+			<ns2:document>
+				<ns2:author>Herbert</ns2:author>
+				<ns2:content>FGCc1m3lUVjafQ==</ns2:content>
+			</ns2:document>
+		</ns2:storeDocumentRequest>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: bootstrap:9090
+Accept: text/xml, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+SOAPAction: ""
+Content-Type: text/xml;charset=utf-8
+Content-Length: 282
+Date: Sat, 05 Sep 2015 15:51:45 GMT
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Header />
+	<SOAP-ENV:Body>
+		<ns2:storeDocumentResponse xmlns:ns2="https://github.com/ralfstuckert/mtom">
+			<ns2:success>true</ns2:success>
+		</ns2:storeDocumentResponse>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

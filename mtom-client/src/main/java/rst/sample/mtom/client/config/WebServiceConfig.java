@@ -20,7 +20,7 @@ public class WebServiceConfig {
 	@Bean
 	public DocumentsClient documentsClient(Jaxb2Marshaller marshaller) {
 		DocumentsClient client = new DocumentsClient();
-		client.setDefaultUri("http://localhost:7070/ws/documents");
+		client.setDefaultUri("http://localhost:9090/ws/documents");
 		client.setMarshaller(marshaller);
 		client.setUnmarshaller(marshaller);
 		return client;

@@ -43,11 +43,12 @@ public class Application {
 			try {
 				result = Integer.parseInt(line);
 				if (result < 1) {
-					System.console().printf("enter an integer > 0");
+					System.out.println("enter an integer > 0");
 					result = null;
 				}
 			} catch (NumberFormatException e) {
-				System.console().printf("%s is not a valid integer", line);
+				System.out.println("not a valid integer: " + line);
+				result = null;
 			}
 		}
 		return result;

@@ -48,11 +48,6 @@ public class DocumentsClient extends WebServiceGatewaySupport {
 		return new DataHandler(source);
 	}
 	
-	private byte[] getContentAsByteArray(final int size) throws IOException {
-		InputStream input = getContentAsStream(size);
-		return IOUtils.toByteArray(input);
-	}
-
 	private InputStream getContentAsStream(final int size) {
 		return new RandomSizeInputStream(size);
 	}

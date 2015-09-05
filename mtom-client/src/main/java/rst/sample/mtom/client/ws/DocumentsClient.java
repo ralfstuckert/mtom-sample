@@ -1,13 +1,11 @@
 package rst.sample.mtom.client.ws;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.Random;
 
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 
-import org.apache.commons.io.IOUtils;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 
 import rst.sample.mtom.jaxb.Document;

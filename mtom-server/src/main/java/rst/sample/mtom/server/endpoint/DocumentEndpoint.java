@@ -1,7 +1,6 @@
 package rst.sample.mtom.server.endpoint;
 
 import java.io.IOException;
-import java.io.InputStream;
 
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
@@ -22,13 +21,8 @@ public class DocumentEndpoint {
 	public StoreDocumentResponse storeDocument(
 			@RequestPayload StoreDocumentRequest request) throws IOException {
 		Document document = request.getDocument();
-		try (InputStream in = document.getContent().getInputStream()) {
-			long counter = 0;
-			while (in.read() != -1) {
-				++counter;
-			}
-			System.out.println(String.format("received %d bytes", counter));
-		}
+		byte[] data = document.getContent();
+		System.out.println(String.format("received %d bytes", data.length));
 		StoreDocumentResponse response = new StoreDocumentResponse();
 		response.setSuccess(true);
 		return response;

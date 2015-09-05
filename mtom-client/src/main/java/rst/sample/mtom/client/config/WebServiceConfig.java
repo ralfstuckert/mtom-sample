@@ -14,7 +14,6 @@ public class WebServiceConfig {
 	public Jaxb2Marshaller marshaller() {
 		Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
 		marshaller.setContextPath("rst.sample.mtom.jaxb");
-		marshaller.setMtomEnabled(true);
 		return marshaller;
 	}
 

@@ -33,7 +33,7 @@
 		<xs:sequence>
 			<xs:element name="name" type="xs:string" />
 			<xs:element name="author" type="xs:string" />
-			<xs:element name="content" type="xs:base64Binary" xmime:expectedContentTypes="application/octet-stream" />
+			<xs:element name="content" type="xs:base64Binary" />
 		</xs:sequence>
 	</xs:complexType>
 

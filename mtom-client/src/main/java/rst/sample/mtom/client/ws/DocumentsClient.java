@@ -17,10 +17,6 @@ public class DocumentsClient extends WebServiceGatewaySupport {
 	private Random random = new Random();
 
 	
-	public DocumentsClient() {
-		setMessageSender(new ChunkedEncodingMessageSender());
-	}
-
 	public boolean storeDocument(int size) throws IOException {
 		Document document = new Document();
 		document.setContent(getContentAsByteArray(size));

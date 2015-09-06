@@ -8,16 +8,17 @@ Pragma: no-cache
 User-Agent: Java/1.7.0_25
 Host: localhost:7070
 Connection: keep-alive
-Content-Length: 353
+Content-Length: 400
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-	<SOAP-ENV:Header />
-	<SOAP-ENV:Body>
-		<ns2:storeDocumentRequest xmlns:ns2="https://github.com/ralfstuckert/mtom">
-			<ns2:document>
-				<ns2:author>Herbert</ns2:author>
-				<ns2:content>FGCc1m3lUVjafQ==</ns2:content>
-			</ns2:document>
-		</ns2:storeDocumentRequest>
-	</SOAP-ENV:Body>
+    <SOAP-ENV:Header />
+    <SOAP-ENV:Body>
+        <ns2:storeDocumentRequest xmlns:ns2="https://github.com/ralfstuckert/mtom">
+            <ns2:document>
+                <ns2:name>30</ns2:name>
+                <ns2:author>Herbert</ns2:author>
+                <ns2:content>zenpS60mUBfHXln3tAbCds82IK1NKhAjAMoI9Czw</ns2:content>
+            </ns2:document>
+        </ns2:storeDocumentRequest>
+    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>

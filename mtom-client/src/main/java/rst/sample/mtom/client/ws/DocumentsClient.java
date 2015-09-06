@@ -26,6 +26,7 @@ public class DocumentsClient extends WebServiceGatewaySupport {
 		Document document = new Document();
 		document.setContent(getContentAsDataHandler(size));
 		document.setAuthor(getAuthor());
+		document.setName(Integer.toString(size));
 
 		StoreDocumentRequest request = new StoreDocumentRequest();
 		request.setDocument(document);
@@ -51,7 +52,7 @@ public class DocumentsClient extends WebServiceGatewaySupport {
 	}
 	
 	private String getAuthor() {
-		return AUTHORS[random.nextInt(AUTHORS.length)];
+		return AUTHORS[0];//random.nextInt(AUTHORS.length)];
 	}
 
 }

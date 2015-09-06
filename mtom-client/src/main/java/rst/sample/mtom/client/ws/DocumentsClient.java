@@ -24,6 +24,7 @@ public class DocumentsClient extends WebServiceGatewaySupport {
 		Document document = new Document();
 		document.setContent(getContentAsByteArray(size));
 		document.setAuthor(getAuthor());
+		document.setName(Integer.toString(size));
 
 		StoreDocumentRequest request = new StoreDocumentRequest();
 		request.setDocument(document);

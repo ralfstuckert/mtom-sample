@@ -2,7 +2,7 @@
 Accept-Encoding: gzip
 Accept: text/xml, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
 SOAPAction: ""
-Content-Type: Multipart/Related; start-info="text/xml"; type="application/xop+xml"; boundary="----=_Part_0_13201313.1441468602936"
+Content-Type: Multipart/Related; start-info="text/xml"; type="application/xop+xml"; boundary="----=_Part_0_8954178.1441545043454"
 Cache-Control: no-cache
 Pragma: no-cache
 User-Agent: Java/1.7.0_25
@@ -10,29 +10,31 @@ Host: localhost:7070
 Connection: keep-alive
 Transfer-Encoding: chunked
 
-320
-------=_Part_0_13201313.1441468602936
+34a
+------=_Part_0_8954178.1441545043454
 Content-Type: application/xop+xml; charset=utf-8; type="text/xml"
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-	<SOAP-ENV:Header />
-	<SOAP-ENV:Body>
-		<ns2:storeDocumentRequest xmlns:ns2="https://github.com/ralfstuckert/mtom">
-			<ns2:document>
-				<ns2:author>Ernie</ns2:author>
-				<ns2:content>
-					<xop:Include xmlns:xop="http://www.w3.org/2004/08/xop/include"
-						href="cid:b2368398-7c33-4fd5-be16-d7f10748b0b8%40github.com" />
-				</ns2:content>
-			</ns2:document>
-		</ns2:storeDocumentRequest>
-	</SOAP-ENV:Body>
+    <SOAP-ENV:Header />
+    <SOAP-ENV:Body>
+        <ns2:storeDocumentRequest xmlns:ns2="https://github.com/ralfstuckert/mtom">
+            <ns2:document>
+                <ns2:name>30</ns2:name>
+                <ns2:author>Herbert</ns2:author>
+                <ns2:content>
+                    <xop:Include xmlns:xop="http://www.w3.org/2004/08/xop/include"
+                        href="cid:97b1c4a1-c82d-4fd3-99a2-d234edbc32ec%40github.com" />
+                </ns2:content>
+            </ns2:document>
+        </ns2:storeDocumentRequest>
+    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
-------=_Part_0_13201313.1441468602936
+------=_Part_0_8954178.1441545043454
 Content-Type: application/octet-stream
-Content-ID: <b2368398-7c33-4fd5-be16-d7f10748b0b8@github.com>
+Content-ID: <97b1c4a1-c82d-4fd3-99a2-d234edbc32ec@github.com>
 Content-Transfer-Encoding: binary
 
-õM,vº•¬+ÏF
-------=_Part_0_13201313.1441468602936--
+)Ñ²¶Ê�~ˆ†>k@ÅÊ¨—z?ØP8Ñ¨\\
+------=_Part_0_8954178.1441545043454--
 0
+

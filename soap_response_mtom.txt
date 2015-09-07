@@ -1,0 +1,24 @@
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: bootstrap:9090
+Accept: text/xml, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+SOAPAction: ""
+Content-Type: Multipart/Related; start-info="text/xml"; type="application/xop+xml"; boundary="----=_Part_1_29939294.1441553076039";charset=UTF-8
+Transfer-Encoding: chunked
+Date: Sun, 06 Sep 2015 15:24:36 GMT
+
+1af
+------=_Part_1_29939294.1441553076039
+Content-Type: application/xop+xml; charset=utf-8; type="text/xml"
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header />
+    <SOAP-ENV:Body>
+        <ns2:storeDocumentResponse xmlns:ns2="https://github.com/ralfstuckert/mtom">
+            <ns2:success>true</ns2:success>
+        </ns2:storeDocumentResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+------=_Part_1_29939294.1441553076039--
+0
+

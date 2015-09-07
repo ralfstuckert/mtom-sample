@@ -1,0 +1,37 @@
+﻿POST /ws/documents HTTP/1.1
+Accept-Encoding: gzip
+Accept: text/xml, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+SOAPAction: ""
+Content-Type: Multipart/Related; start-info="text/xml"; type="application/xop+xml"; boundary="----=_Part_0_2494886.1441553075493"
+Cache-Control: no-cache
+Pragma: no-cache
+User-Agent: Java/1.7.0_25
+Host: localhost:7070
+Connection: keep-alive
+Content-Length: 842
+
+------=_Part_0_2494886.1441553075493
+Content-Type: application/xop+xml; charset=utf-8; type="text/xml"
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header />
+    <SOAP-ENV:Body>
+        <ns2:storeDocumentRequest xmlns:ns2="https://github.com/ralfstuckert/mtom">
+            <ns2:document>
+                <ns2:name>30</ns2:name>
+                <ns2:author>Herbert</ns2:author>
+                <ns2:content>
+                    <xop:Include xmlns:xop="http://www.w3.org/2004/08/xop/include"
+                        href="cid:ecc6eb7a-ce73-4ab7-8266-3bc2869cb0ae%40github.com" />
+                </ns2:content>
+            </ns2:document>
+        </ns2:storeDocumentRequest>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+------=_Part_0_2494886.1441553075493
+Content-Type: application/octet-stream
+Content-ID: <ecc6eb7a-ce73-4ab7-8266-3bc2869cb0ae@github.com>
+Content-Transfer-Encoding: binary
+
+!�öâ6[ê�Ä¨Å·Î½ªÖÓ$+yò'½ni
+------=_Part_0_2494886.1441553075493--

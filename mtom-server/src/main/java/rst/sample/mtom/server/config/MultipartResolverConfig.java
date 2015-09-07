@@ -24,7 +24,6 @@ public class MultipartResolverConfig {
 	@Bean
 	public CommonsMultipartResolver filterMultipartResolver() {
 		final CommonsMultipartResolver resolver = new CommonsMultipartResolver();
-		resolver.setMaxUploadSize(100000000);
 		return resolver;
 	}
 

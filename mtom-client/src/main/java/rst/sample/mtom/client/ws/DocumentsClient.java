@@ -16,7 +16,9 @@ public class DocumentsClient extends WebServiceGatewaySupport {
 	private static final String[] AUTHORS = new String[] {"Herbert", "Ernie", "Bibo", "Bert"};
 	private Random random = new Random();
 
-	
+	public DocumentsClient() {
+	}
+
 	public boolean storeDocument(int size) throws IOException {
 		Document document = new Document();
 		document.setContent(getContentAsByteArray(size));

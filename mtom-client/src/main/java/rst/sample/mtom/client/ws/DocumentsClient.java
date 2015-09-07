@@ -52,7 +52,7 @@ public class DocumentsClient extends WebServiceGatewaySupport {
 	}
 	
 	private String getAuthor() {
-		return AUTHORS[0];//random.nextInt(AUTHORS.length)];
+		return AUTHORS[random.nextInt(AUTHORS.length)];
 	}
 
 }

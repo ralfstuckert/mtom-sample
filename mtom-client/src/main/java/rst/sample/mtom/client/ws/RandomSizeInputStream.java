@@ -19,7 +19,8 @@ public class RandomSizeInputStream extends InputStream {
 	@Override
 	public int read() throws IOException {
 		while (count-- > 0) {
-			return random.nextInt(255);
+			// avoid 0-byte in console output ;-)
+			return random.nextInt(254) + 1;
 		}
 		return -1;
 	}

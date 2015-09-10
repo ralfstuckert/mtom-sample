@@ -1,5 +1,5 @@
 # mtom-sample
-This repository contains the example client and server for the article TODO
+This repository contains the example client and server for the article Use MTOM to efficiently transmit binary content in SOAP.
 
 There are three branches:
 

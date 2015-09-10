@@ -24,7 +24,7 @@ repositories {
 task genJaxb {
     ext.sourcesDir = "${buildDir}/generated-sources/jaxb"
     ext.classesDir = "${buildDir}/classes/jaxb"
-    ext.schema = "src/main/resources/wsdl/documents.wsdl"
+    ext.schema = "src/main/resources/documents.xsd"
 
     outputs.dir classesDir
 
@@ -35,9 +35,7 @@ task genJaxb {
             mkdir(dir: sourcesDir)
             mkdir(dir: classesDir)
 
-            xjc(destdir: sourcesDir, schema: schema ) { //,
-//                    package: "documents.wsdl") {
-                arg(value: "-wsdl")
+            xjc(destdir: sourcesDir, schema: schema ) { 
                 produces(dir: sourcesDir, includes: "**/*.java")
             }
 
@@ -64,10 +62,15 @@ targetCompatibility = 1.7
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter")
-    compile("org.springframework.ws:spring-ws-core")
-    compile('org.springframework:spring-web')
-    compile("org.apache.httpcomponents:httpclient")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile("org.springframework.boot:spring-boot-starter-data-rest")
+    compile("org.springframework.boot:spring-boot-starter-ws")
+    compile("wsdl4j:wsdl4j")
+    compile("javax.ws.rs:jsr311-api:1.1.1")
     compile("commons-io:commons-io:2.1")
+	// needed for multipart requests  
+    compile("commons-fileupload:commons-fileupload:1.3.1")
+    
     compile(files(genJaxb.classesDir).builtBy(genJaxb))
 
     jaxb "com.sun.xml.bind:jaxb-xjc:2.1.7"

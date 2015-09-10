@@ -3,9 +3,11 @@ This repository contains the example client and server for the article TODO
 
 There are three branches:
 
-| `base64` | Contains the initial SOAP setup using the default base64 encoding |
-| `mtom` | This setup uses MTOM as transport encoding |
-| `master` | The final example demonstrating MTOM with streaming |
+Branch   | Description
+---------| ------------------------------------------------------------------
+`base64` | Contains the initial SOAP setup using the default base64 encoding 
+`mtom`   | This setup uses MTOM as transport encoding 
+`master` | The final example demonstrating MTOM with streaming 
 
 They are both checked in as Maven-based Eclipse projects, but they also contain a Gradle build. To start the client or server, just run the provided launcher. 
 

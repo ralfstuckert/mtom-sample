@@ -1,5 +1,5 @@
 # mtom-sample
-This repository contains the example client and server for the article Use MTOM to Efficiently Transmit Binary Content in SOAP](http://dzone.com/articles/use-mtom-to-efficiently-transmit-binary-content-in).
+This repository contains the example client and server for the article Use [MTOM to Efficiently Transmit Binary Content in SOAP](http://dzone.com/articles/use-mtom-to-efficiently-transmit-binary-content-in).
 
 There are three branches:
 
